@@ -25,6 +25,6 @@ Private Sub CommandButton1_Click()
     Next
     wb.Close False
     MsgBox "已经拆分了" & i & "个表格"
-    Set wb = Nothing
+    Set wb = Nothing '释放wb
     Application.ScreenUpdating = True
 End Sub
